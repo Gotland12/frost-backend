@@ -11,5 +11,6 @@ def securities():
     return [
         {"ticker": "NVDA", "name": "NVIDIA"},
         {"ticker": "MSFT", "name": "Microsoft"},
-        {"ticker": "ASML", "name": "ASML"}
-
+        {"ticker": "ASML", "name": "ASML"},
+        {"ticker": "SAP", "name": "SAP"}
+    ]
