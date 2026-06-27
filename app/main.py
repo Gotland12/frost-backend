@@ -31,3 +31,19 @@ def securities():
     db.close()
 
     return securities
+
+@app.get("/api/v1/frost/{ticker}")
+def frost(ticker: str):
+
+    scores = {
+        "NVDA": 15,
+        "MSFT": 14,
+        "ASML": 14,
+        "SAP": 12,
+        "NOVO-B": 13
+    }
+
+    return {
+        "ticker": ticker.upper(),
+        "frost_score": scores.get(ticker.upper(), 0)
+    }
