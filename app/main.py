@@ -47,3 +47,11 @@ def frost(ticker: str):
         "ticker": ticker.upper(),
         "frost_score": scores.get(ticker.upper(), 0)
     }
+    "breakdown": {
+        "F": 3,
+        "R": 3,
+        "O": 3,
+        "S": 3,
+        "T": 3
+    }
+}
