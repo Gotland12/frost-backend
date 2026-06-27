@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from database import SessionLocal
-from models import Security
+from app.database import SessionLocal
+from app.models import Security
 from sqlalchemy import text
 
 
