@@ -50,7 +50,6 @@ f_scores = {
     "ASML": 3,
     "SAP": 3,
     "NOVO-B": 3
-}
 
 
     return {
