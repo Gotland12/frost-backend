@@ -44,6 +44,14 @@ def frost(ticker: str):
         "SAP": 12,
         "NOVO-B": 13
     }
+f_scores = {
+    "NVDA": 3,
+    "MSFT": 3,
+    "ASML": 3,
+    "SAP": 3,
+    "NOVO-B": 3
+}
+
 
     return {
         "ticker": ticker.upper(),
