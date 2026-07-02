@@ -52,7 +52,7 @@ f_scores = {
     "NOVO-B": 3
 }
 
-    return {
+  return {
         "ticker": ticker.upper(),
         "frost_score": scores.get(ticker.upper(), 0),
         "breakdown": {
