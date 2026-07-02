@@ -66,4 +66,4 @@ def frost(ticker: str):
         }
     }
 
-}
+
