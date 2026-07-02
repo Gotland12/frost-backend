@@ -34,6 +34,7 @@ def securities():
 
     return securities
 
+
 @app.get("/api/v1/frost/{ticker}")
 def frost(ticker: str):
 
@@ -44,21 +45,25 @@ def frost(ticker: str):
         "SAP": 12,
         "NOVO-B": 13
     }
-f_scores = {
-    "NVDA": 3,
-    "MSFT": 3,
-    "ASML": 3,
-    "SAP": 3,
-    "NOVO-B": 3
-}
-return {
+
+    f_scores = {
+        "NVDA": 3,
+        "MSFT": 3,
+        "ASML": 3,
+        "SAP": 3,
+        "NOVO-B": 3
+    }
+
+    return {
         "ticker": ticker.upper(),
         "frost_score": scores.get(ticker.upper(), 0),
         "breakdown": {
-        "F": 3,
-        "R": 3,
-        "O": 3,
-        "S": 3,
-        "T": 3
+            "F": 3,
+            "R": 3,
+            "O": 3,
+            "S": 3,
+            "T": 3
+        }
     }
+
 }
